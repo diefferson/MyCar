@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/findFragment"
+        android:title="@string/find"
+        android:icon="@drawable/ic_find"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/carFragment"
+        android:title=""
+        android:icon="@drawable/ic_no_icon"
+        android:enabled="false"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/batteryFragment"
+        android:title="@string/battery"
+        android:icon="@drawable/ic_battery"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/tankFragment"
+        android:title="@string/tank"
+        android:icon="@drawable/ic_tank"
+        app:showAsAction="always"/>
+
+</menu>

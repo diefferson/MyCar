@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.gft.mycar.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/findFragment"
+        android:name="com.gft.mycar.ui.find.FindFragment"
+        android:label="FindFragment"
+        tools:layout="@layout/fragment_find"/>
+
+    <fragment
+        android:id="@+id/tankFragment"
+        android:name="com.gft.mycar.ui.tank.TankFragment"
+        android:label="TankFragment"
+        tools:layout="@layout/fragment_tank"/>
+
+    <fragment
+        android:id="@+id/batteryFragment"
+        android:name="com.gft.mycar.ui.battery.BatteryFragment"
+        android:label="BatteryFragment"
+        tools:layout="@layout/fragment_battery"/>
+
+    <fragment
+        android:id="@+id/carFragment"
+        android:name="com.gft.mycar.ui.car.CarFragment"
+        android:label="CarFragment"
+        tools:layout="@layout/fragment_car"/>
+
+    <action
+        android:id="@+id/goToCardFragment"
+        app:destination="@id/carFragment"
+        app:popUpTo="@id/homeFragment"/>
+
+</navigation>
